@@ -59,7 +59,7 @@ core_embeddings_model = load_embeddings()
 
 @st.cache_resource
 def load_vector_db():
-    return FAISS.load_local("IndexLaw\FAISS_INDEX", core_embeddings_model,allow_dangerous_deserialization=True)
+    return FAISS.load_local("INDEX", core_embeddings_model,allow_dangerous_deserialization=True)
 
 vector_db = load_vector_db()
 
@@ -101,7 +101,7 @@ prompt_template ="""
 - Provide the source(s) from which the legal information was retrieved (e.g., legal database, case law citation, statutory references). Include any valid hyperlinks for further reference.
 {context}
 """
-api_key="open_api"
+api_key=st.secrets["OPENAI_API_KEY"]
 # Initialize the language model (ChatOpenAI)
 @st.cache_resource
 def load_llm():
