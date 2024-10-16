@@ -161,7 +161,7 @@ if st.button("Get Legal Insights"):
                 document_count = 0
                 result_sources = []  # List to store the sources
 
-                base_url = r"C:\Users\aipro\Documents\Fw_ Meeting with Promptora AI\Laws"
+                # base_url = r"C:\Users\aipro\Documents\Fw_ Meeting with Promptora AI\Laws"
 
                 for doc in response['source_documents']:
                     source = doc.metadata['source']
@@ -177,7 +177,7 @@ if st.button("Get Legal Insights"):
                         filename = filename.replace('.txt', '.pdf')
                         
                         # Create a hyperlink with "click here" text
-                        result_sources.append(f"[{filename}]({base_url}/{filename})")
+                        result_sources.append(f"[{filename}]")
                         
                         if document_count == top_n:
                             break
