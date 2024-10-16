@@ -161,7 +161,7 @@ if st.button("Get Legal Insights"):
                 document_count = 0
                 result_sources = []  # List to store the sources
 
-                # base_url = r"C:\Users\aipro\Documents\Fw_ Meeting with Promptora AI\Laws"
+                base_url = r"C:\Users\aipro\Documents\Fw_ Meeting with Promptora AI\Laws"
 
                 for doc in response['source_documents']:
                     source = doc.metadata['source']
@@ -183,9 +183,9 @@ if st.button("Get Legal Insights"):
                             break
 
                 # Join the sources into a newline-separated string
-                # result_source_string = "\n\n".join(result_sources)
-                # print(result_source_string)
-                # st.markdown(f"result:{result_source_string}",unsafe_allow_html=True)
+                result_source_string = "\n\n".join(result_sources)
+                print(result_source_string)
+                st.markdown(f"result:{result_source_string}",unsafe_allow_html=True)
                             
             except Exception as e:
                 st.error(f"An error occurred: {str(e)}")
