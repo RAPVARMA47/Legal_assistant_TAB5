@@ -181,8 +181,8 @@ st.write("Queries to try:")
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    if st.button("Power of appropriate Government to make rules"):
-        set_query("Power of appropriate Government to make rules")
+    if st.button("key provisions of the Act aimed at preventing and addressing sexual harassment?"):
+        set_query("key provisions of the Act aimed at preventing and addressing sexual harassment?")
 with col2:
         
     if st.button("What are the penalties in the Child labour prohibition and regulation act"):
@@ -190,8 +190,8 @@ with col2:
 
 with col3:
             
-    if st.button("How Poverty, Grievance and conflict played a role in anti beggary law"):
-        set_query("How Poverty, Grievance and conflict played a role in anti beggary law")
+    if st.button("Primary purpose of the Sexual Harassment of Women at Workplace Act, 2013?"):
+        set_query("Primary purpose of the Sexual Harassment of Women at Workplace Act, 2013?")
 
 with col4:
 
