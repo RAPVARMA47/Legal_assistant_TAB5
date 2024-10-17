@@ -181,8 +181,8 @@ st.write("Queries to try:")
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    if st.button("Key provisions of the Act for preventing and addressing sexual harassment?"):
-        set_query("Key provisions of the Act for preventing and addressing sexual harassment?")
+    if st.button("What are the main ways the Act prevents sexual harassment?"):
+        set_query("What are the main ways the Act prevents sexual harassment?")
 with col2:
         
     if st.button("Penalties in the Child labour prohibition and regulation act"):
