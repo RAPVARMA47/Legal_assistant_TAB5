@@ -28,8 +28,8 @@ st.markdown("""
         font-weight: bold;
     }
     .stButton>button {
-        background-color: #4682B4;
-        color: white;
+        background-color: #d8dde2;
+        color: black;
     }
     .stTextInput>div>div>input {
         background-color: #E6F3FF;
@@ -40,6 +40,10 @@ st.markdown("""
         margin-left : 90px;
         
     }
+    .st-emotion-cache-1vt4y43:hover {
+    border-color: rgb(17 14 14);
+    color: rgb(22 18 18);
+}
     
     .st-emotion-cache-ocqkz7 {
     display: flex;
@@ -52,20 +56,20 @@ st.markdown("""
     width: 1100px;
     }
     .st-b6 {
-    border-bottom-color: rgb(32 122 199);
+    border-bottom-color: #d8dde2;
     }
 
 
     .st-b5 {
-        border-top-color: rgb(32 122 199);
+        border-top-color: #d8dde2;
     }
 
     .st-b4 {
-        border-right-color: rgb(32 122 199);
+        border-right-color: #d8dde2;
     }
 
     .st-b3 {
-        border-left-color: rgb(32 122 199);
+        border-left-color: #d8dde2;
     }
 
     """, unsafe_allow_html=True)
