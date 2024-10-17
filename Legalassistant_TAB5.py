@@ -155,28 +155,23 @@ st.write("Queries to try:")
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    if st.button("What are the state's laws on wildlife management and hunting?"):
-        set_query("What are the state's laws on wildlife management and hunting?")
+    if st.button("Power of appropriate Government to make rules"):
+        set_query("Power of appropriate Government to make rules")
 with col2:
         
-    if st.button("Please explain the current eminent domain policies in NewYork."):
-        set_query("Please explain the current eminent domain policies in NewYork.")
+    if st.button("What are the penalties in the Child labour prohibition and regulation act"):
+        set_query("What are the penalties in the Child labour prohibition and regulation act")
 
 with col3:
             
-    if st.button("What are the elements of permitting requirements and notice?"):
-        set_query("What are the elements of permitting requirements and notice?")
+    if st.button("How Poverty, Grievance and conflict played a role in anti beggary law"):
+        set_query("How Poverty, Grievance and conflict played a role in anti beggary law")
 
 with col4:
 
-    if st.button("What is adverse possession? What are the elements of adverse possession in Alaska? "):
-        set_query("What is adverse possession? What are the elements of adverse possession in Alaska?")
+    if st.button("Legitimacy of children born of child marriages."):
+        set_query("Legitimacy of children born of child marriages.")
         
-    
-
-
-
-
 
 # Process button
 if st.button("Get Legal Insights"):
