@@ -67,7 +67,12 @@ st.markdown("""
     .st-b3 {
         border-left-color: rgb(32 122 199);
     }
-    
+    p, ol, ul, dl {
+    margin: 0px 0px 1rem;
+    padding: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+}
   
     """, unsafe_allow_html=True)
 
