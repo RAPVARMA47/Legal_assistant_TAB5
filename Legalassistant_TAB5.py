@@ -34,6 +34,13 @@ st.markdown("""
     .stTextInput>div>div>input {
         background-color: #E6F3FF;
     }
+    [id="ec04b9b3"]{
+        margin-top : -100px;
+        font-size:30px;
+        margin-left : 90px;
+        
+    }
+    
     </style>
     """, unsafe_allow_html=True)
 
