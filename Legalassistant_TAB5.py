@@ -140,18 +140,52 @@ qa = RetrievalQA(
     retriever=retriever,
     return_source_documents=True,
 )
+def set_query(query):
+    st.session_state.query_input = query
+    st.rerun()
 
-# User input
-user_input = st.text_input("Enter your legal question:", placeholder="e.g., What are the key elements of a valid contract?")
+# Initialize session state for the query if it doesn't exist
+if "query_input" not in st.session_state:
+    st.session_state.query_input = ""
+
+# The text input field, populated with the query stored in session state
+query = st.text_input("Enter your query:", value=st.session_state.query_input)
+
+st.write("Queries to try:")
+
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    if st.button("What are the state's laws on wildlife management and hunting?"):
+        set_query("What are the state's laws on wildlife management and hunting?")
+with col2:
+        
+    if st.button("Please explain the current eminent domain policies in NewYork."):
+        set_query("Please explain the current eminent domain policies in NewYork.")
+
+with col3:
+            
+    if st.button("What are the elements of permitting requirements and notice?"):
+        set_query("What are the elements of permitting requirements and notice?")
+
+with col4:
+
+    if st.button("What is adverse possession? What are the elements of adverse possession in Alaska? "):
+        set_query("What is adverse possession? What are the elements of adverse possession in Alaska?")
+        
+    
+
+
+
+
 
 # Process button
 if st.button("Get Legal Insights"):
-    if user_input:
+    if query:
         with st.spinner("Analyzing your question..."):
             start_time = time.time()
             try:
                 # Invoke the retriever with the user query
-                response = qa.invoke({"query": user_input})
+                response = qa.invoke({"query": query})
                 
                 # Display response
                 st.markdown("### Legal Analysis", unsafe_allow_html=True)
