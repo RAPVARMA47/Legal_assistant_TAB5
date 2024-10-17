@@ -181,12 +181,12 @@ st.write("Queries to try:")
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    if st.button("key provisions of the Act aimed at preventing and addressing sexual harassment?"):
-        set_query("key provisions of the Act aimed at preventing and addressing sexual harassment?")
+    if st.button("Key provisions of the Act for preventing and addressing sexual harassment?"):
+        set_query("Key provisions of the Act for preventing and addressing sexual harassment?")
 with col2:
         
-    if st.button("What are the penalties in the Child labour prohibition and regulation act"):
-        set_query("What are the penalties in the Child labour prohibition and regulation act")
+    if st.button("Penalties in the Child labour prohibition and regulation act"):
+        set_query("Penalties in the Child labour prohibition and regulation act")
 
 with col3:
             
