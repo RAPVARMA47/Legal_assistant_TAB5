@@ -190,8 +190,8 @@ with col2:
 
 with col3:
             
-    if st.button("Primary purpose of the Sexual Harassment of Women at Workplace Act, 2013?"):
-        set_query("Primary purpose of the Sexual Harassment of Women at Workplace Act, 2013?")
+    if st.button("How does the Act help women who face sexual harassment at work?"):
+        set_query("How does the Act help women who face sexual harassment at work?")
 
 with col4:
 
