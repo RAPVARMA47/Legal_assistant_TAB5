@@ -177,7 +177,7 @@ if "query_input" not in st.session_state:
 # The text input field, populated with the query stored in session state
 query = st.text_input("Enter your query:", value=st.session_state.query_input)
 
-st.write("Queries to try:")
+st.write("Sample Prompts:")
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
