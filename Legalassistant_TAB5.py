@@ -41,7 +41,34 @@ st.markdown("""
         
     }
     
-    </style>
+    .st-emotion-cache-ocqkz7 {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    gap: 1rem;
+    width: 1100px;
+    }
+    .st-b6 {
+    border-bottom-color: rgb(32 122 199);
+    }
+
+
+    .st-b5 {
+        border-top-color: rgb(32 122 199);
+    }
+
+    .st-b4 {
+        border-right-color: rgb(32 122 199);
+    }
+
+    .st-b3 {
+        border-left-color: rgb(32 122 199);
+    }
+    
+  
     """, unsafe_allow_html=True)
 
 hide_st_style = """
