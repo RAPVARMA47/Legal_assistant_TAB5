@@ -27,9 +27,41 @@ st.markdown("""
         font-size:20px !important;
         font-weight: bold;
     }
-    .stButton>button {
-        background-color: #d8dde2;
-        color: black;
+     .stButton>button:hover{
+        color: grey;
+        border: 0.5px solid grey;
+    }
+    
+    .stButton>button:focus {
+    outline: -webkit-focus-ring-color auto 5px !important;
+    color: black !important;
+    }
+
+    # .stButton>button:hover{
+    #     color: grey;
+    #     border: 0.5px solid grey;
+    # }
+    
+    # .stButton>button:focus{
+    #     color: grey;
+    #     border: 0.5px solid grey;
+    # }
+    
+    .stButton>button:active{
+        color: grey;
+        border: 0.5px solid grey;
+        background-color: grey;
+    }
+    
+    .stButton > button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid black;
     }
     .stTextInput>div>div>input {
         background-color: #E6F3FF;
