@@ -226,8 +226,8 @@ with col2:
 
 with col3:
             
-    if st.button("How can the Act be made better to protect women at work?"):
-        set_query("How can the Act be made better to protect women at work?")
+    if st.button("Explain me about the Act that protect women at work?"):
+        set_query("Explain me about the Act that protect women at work?")
 
 with col4:
 
