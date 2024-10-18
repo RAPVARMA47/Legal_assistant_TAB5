@@ -226,8 +226,8 @@ with col2:
 
 with col3:
             
-    if st.button("The main things the Act says to stop sexual harassment?"):
-        set_query("The main things the Act says to stop sexual harassment?")
+    if st.button("How can the Act be made better to protect women at work?"):
+        set_query("How can the Act be made better to protect women at work?")
 
 with col4:
 
